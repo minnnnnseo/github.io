@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f8f9fa;
+  margin: 0;
+}
+
+/* 헤더 섹션 */
+.header-section {
+  text-align: center;
+  padding: 80px 0 40px;
+  background: white;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #ef9c6c;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(135deg, #FFE5B4, #FFD1BA);
+  margin: 0 auto 20px;
+}
+
+.section-label {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.section {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  height: 350px;
+}
+
+.text-box {
+  flex: 1;
+  padding: 40px 60px;
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: lighter;
+  border-top: 1px solid #e6e8ea;
+  border-right: 1px solid #e6e8ea;
+  color: #ef9c6c;
+}
+
+.text-box h2{
+  line-height: 1.4;
+}
+
+.text-box p-1{
+  font-size: 17px;
+  padding-left: 60px;
+  line-height: 1.9;
+  color: #666;
+}
+
+/* 오버레이 텍스트 */
+.overlay-side {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #e6e8ea;
+}
+.overlay-side h3 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.overlay-side p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 2;
+}
+
+
+/* 하단 박스 */
+.bottom-text {
+background-color: #fbda9e;
+color: white;
+padding: 40px 60px;
+font-size: 1.1rem;
+display: flex;
+justify-content: space-between;
+align-items: center; /* 세로 중앙 정렬  */
+gap: 40px;
+flex-wrap: wrap;
+min-height: 180px; /* 높이 키운 경우에도 정중앙 유지 */
+}
+
+.info-pair {
+flex: 1 1 30%;
+}
+.info-pair strong {
+display: block;
+font-size: 1.2rem;
+font-weight: 700;
+margin-bottom: 8px;
+text-decoration: none;
+}
+
+/* 두 번째 섹션  */
+.project-layout-3 {
+display: flex;
+gap: 0;
+width: 100%;
+height: 80vh;
+}
+.left-column {
+flex: 1.2;
+background-color: #fdfdfd;
+padding: 80px;
+color: #555;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.left-column h2{
+  line-height: 3;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.left-column p-1{
+line-height: 2.5;
+margin-bottom: 50px;
+}
+
+.left-column p-2{
+  line-height: 2.5;
+  }
+
+.right-columns {
+flex: 1.8;
+display: flex;
+flex-direction: column;
+}
+.img-block {
+flex: 1.8;
+background-size: cover;
+background-position: center;
+}
+.img-1 {
+background-image: url(../img/c1.jpg);
+}
+.img-2 {
+background-image: url(../img/c2.jpg);
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: #fbda9e;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: fit-content;
+  transition: 0.3s ease;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.btn1:hover {
+  background-color: #f7e5c5;
+}
+
+
+/* 세 번째 섹션  */
+.project-layout-4 {
+  padding-top: 60px;
+  background-color: #fbda9e;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  height: 90vh;
+  }
+
+  .left-column-1 {
+  flex: 1;
+  background-color: #fdfdfd;
+  padding: 80px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #e6e8ea;
+  }
+  
+  .left-column-1 h2{
+    line-height: 3;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  
+  .left-column-1 p{
+  line-height: 2.5;
+  }
+  .right-columns-1 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  }
+  .img-block {
+  flex: 2;
+  background-size: cover;
+  background-position: center;
+  }
+  .img-3 {
+  background-image: url(../img/c3.jpg);
+  background-size: cover;
+  }
+  .img-4 {
+  background-image: url(../img/c4.jpg);
+  }
+
+  /* 초기 상태 */
+.float-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* 스크롤 진입 시 상태 */
+.float-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

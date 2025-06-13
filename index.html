@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Portfolio Website</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 헤더부분 -->
+    <header>
+        <nav>
+            <div class="logo"></div>
+            
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">About <span class="dropdown-arrow">▼</span> </a>
+                <div class="dropdown">
+                  <a href="#about-section">나의 이야기</a> <!-- 밑에 섹션으로 가게끔 -->
+                  <a href="vision.html">목표 & 비전</a> <!-- 다른창으로 가게끔 -->
+                  <a href="interests.html">관심사</a>
+                </div>
+              </li>
+                
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Portfolio <span class="dropdown-arrow">▼</span> </a>
+                    <div class="dropdown">
+                        <a href="project1.html">브랜딩</a>
+                        <a href="project2.html">상세페이지 디자인</a>
+                        <a href="project3.html">UX/UI</a>
+                    </div>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="language">KOR</div>
+        </nav>
+    </header>
+
+    <!-- 메인 화면 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>안녕하세요, 저는 김민서입니다</h1>
+            <p>Designing My Story</p>
+            <a href="#about-section" class="btn">More</a>
+        </div>
+    </section>
+
+    <!-- 자기소개 섹션 -->
+    <section class="about-section" id="about-section">
+        <div class="about-text">
+          <h1>안녕하세요,<br>디지털 마케팅과 디자인을 전공하는<br>열정적인 크리에이터입니다.</h1>
+          <p>
+            내 감각엔 <strong>팔레트</strong>가 있어요.<br>
+            트렌드를 섞어 분위기를 칠하고, 색으로 무드를 디자인합니다.<br>
+            유행을 좇기보다 <strong>저만의 색</strong>을 찾아 조화롭게 풀어내는 디자이너가 되고 싶습니다.
+          </p>
+        </div>
+        <div class="about-visual">
+          <div class="circle large"></div>
+          <div class="circle medium"></div>
+          <div class="circle small"></div>
+          <img src="img/My-photo.JPG" alt="프로필 사진" class="profile-photo">
+        </div>
+      </section>
+
+     <!-- 타임라인 섹션 -->
+      <section class="timeline">
+        <div class="timeline-content">
+          <div class="timeline-text">
+            <h2>나의 학창시절 발자취</h2>
+            <p>중학교부터 대학교까지, 나의 성장 여정을 소개합니다.</p>
+          </div>
+          <div class="timeline-items">
+            <div class="year-block">
+              <h3>2018</h3>
+              <ul>
+                <li>인천논현중학교 입학</li>
+              </ul>
+            </div>
+            <div class="year-block">
+              <h3>2021</h3>
+              <ul>
+                <li>인천논현고등학교 진학</li>
+              </ul>
+            </div>
+            <div class="year-block">
+              <h3>2024 ~ </h3>
+              <ul>
+                <li>인하공업전문대학교</li>
+                <li>디지털마케팅공학과 재학</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 디자인스킬, 수상, 자격증 섹션 -->
+      <div class="container1">
+    
+          <div class="skill-card">
+            <div class="skill-front">
+              <img src="https://img.icons8.com/color/96/adobe-illustrator--v1.png" alt="Illustrator">
+              <p>Illustrator</p>
+            </div>
+            <div class="skill-back">
+              <p>숙련도: 중</p>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-front">
+              <img src="https://img.icons8.com/color/96/adobe-photoshop--v1.png" alt="Photoshop">
+              <p>Photoshop</p>
+            </div>
+            <div class="skill-back">
+              <p>숙련도: 상</p>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-front">
+              <img src="https://img.icons8.com/color/96/adobe-premiere-pro--v1.png" alt="Premiere-pro">
+              <p>Premiere-pro</p>
+            </div>
+            <div class="skill-back">
+              <p>숙련도: 중상</p>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-front">
+              <img src="https://img.icons8.com/color/96/figma--v1.png" alt="Figma">
+              <p>Figma</p>
+            </div>
+            <div class="skill-back">
+              <p>숙련도: 중</p>
+            </div>
+          </div>
+
+        </div>
+
+      <div class="container2">
+
+        <!-- 오른쪽: 카드형 수상 & 자격증 -->
+        <div class="cards">
+          <div class="card">
+            <h3>Awards</h3>
+            <p>인천신용보증재단 지역상권활성화 SNS콘텐츠 제작 부문 이사장상 (2024.12)</p>
+            <p>제30회 커뮤니케이션디자인 국제공모전 교과서 디자인 부문 입상 (2024.05)</p>
+          </div>
+          <div class="card">
+            <h3>Licenses</h3>
+            <p>GTQ 포토샵 1급 (2025.02)</p>
+          </div>
+        </div>
+    
+       </div>
+
+      <!-- 키워드 섹션 -->
+      <section class="keyword-section-layout">
+        <div class="keyword-left">
+          <p class="keyword-label">나의 키워드</p>
+          <h2 class="keyword-main-text">디자인으로 무드을 표현하는<br>사람입니다.</h2>
+          <a href="##" class="keyword-btn"> -----> </a>
+        </div>
+        <div class="keyword-right">
+          <div class="keyword-box box1">
+            <p class="keyword-title">섬세하게 정리하는</p>
+            <p class="keyword-desc">결과물은 언제나 <strong>내가 책임진다</strong>는 생각으로<br>
+                                    <strong>끝까지 깔끔하게 정리</strong>하는 습관이 있어요. </p>
+          </div>
+          <div class="keyword-box box2">
+            <p class="keyword-title">색으로 분위기를 만드는</p>
+            <p class="keyword-desc">무드를 표현할 땐 색이 가장 중요하다고 생각해요.<br>
+                                    <strong>색의 조화</strong>로 <strong>무드를 완성</strong>하는 작업을 즐깁니다.
+            </p>
+          </div>
+          <div class="keyword-box box3">
+            <p class="keyword-title">감각형 디자이너</p>
+            <p class="keyword-desc">기획이나 탐구보단, <strong>전체적인 '결'과 '느낌'</strong>을 보는 감각형.<br>
+                                    보고, 느낀 것으로 시각화하는 <strong>직관적인 스타일</strong>입니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 포트폴리오 섹션 -->
+      <section class="biz-section">
+        <div class="biz-title-wrap">
+          <h2 class="biz-title">저의 작업물을 소개합니다.</h2>
+          <p class="biz-subtext">
+            인하공전 디지털마케팅공학과 수업을 통해 <strong>직접 기획하고 제작한 프로젝트</strong>입니다.<br>
+            학기 동안 <strong>아이디어부터 디자인, 제작까지 전 과정을 스스로 이끌며 완성한 결과물들</strong>입니다.
+          </p>
+        </div>
+      
+        <div class="biz-grid">
+          <div class="biz-card" style="background-image: url('img/project1.jpg')">
+            <div class="biz-content">
+              <h3>BRANDING</h3>
+              <p>소프트 로맨틱 쇼핑몰 “MIGNONNE”</p>
+              <a href="project1.html" class="biz-btn">→ 바로가기</a>
+            </div>
+          </div>
+          <div class="biz-card" style="background-image: url('img/project2.jpg')">
+            <div class="biz-content">
+              <h3>DETAIL PAGE</h3>
+              <p>쇼피 싱가포르 비타민 C 세럼</p>
+              <a href="project2.html" class="biz-btn">→ 바로가기</a>
+            </div>
+          </div>
+          <div class="biz-card" style="background-image: url('img/project3.jpg')">
+            <div class="biz-content">
+              <h3>UX/UI DESIGN</h3>
+              <p>저속노화 레시피 어플 “SIOW COOK”</p>
+              <a href="project3.html" class="biz-btn">→ 바로가기</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-content">
+    <div class="contact-header">
+      <img src="img/logo.png" alt="My Logo" class="contact-logo" />
+      <h2>Contact Me</h2>
+      <p>궁금한 점이 있다면 편하게 메일 주세요!</p>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="img/logo.png" alt="Logo" class="footer-logo" />
+    <span>&copy; 2025 KIMMINSEO PORTFOLIO</span>
+  </div>
+  <div class="footer-right">
+      <a href="tel:01088624220">010-8862-4220</a>
+      <a href="mailto:ghjklzx90@naver.com">Email</a>
+      <a href="https://blog.naver.com/gang_cat" target="_blank">Blog</a>
+  </div>
+</footer>
+
+</body>
+</html>

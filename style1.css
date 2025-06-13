@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 헤더 섹션 */
+.header-section {
+    text-align: center;
+    padding: 80px 0 40px;
+    background: white;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #cbd4f6, #c4f1ef);
+    margin: 0 auto 20px;
+}
+
+.section-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* 비전 섹션 */
+.vision-section {
+    position: relative;
+    height: 600px;
+    background: /* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) */
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600"><rect fill="%23f8f9fa" width="1400" height="600"/><circle fill="%23764ba2" opacity="0.3" cx="200" cy="100" r="150"/><circle fill="%23667eea" opacity="0.4" cx="1200" cy="400" r="200"/><rect fill="%23ffffff" opacity="0.1" x="600" y="200" width="200" height="200" rx="10"/></svg>') center/cover;
+    /* background-color: #f0f0f0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C3E50;
+    text-align: center;
+}
+
+.vision-content {
+    z-index: 2;
+    position: relative;
+}
+
+.vision-label {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    opacity: 0.9;
+}
+
+.vision-underline {
+    width: 100px;
+    height: 2px;
+    background: #2C3E50;
+    margin: 0 auto 40px;
+}
+
+.vision-text {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.vision-text .highlight1 {
+    font-weight: 500;
+    color: #764ba2;
+}
+
+.vision-text .highlight2 {
+    font-weight: 500;
+    color: #4c61af;
+}
+
+/* 목표 섹션 */
+.goals-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.goals-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.goal-card {
+    background: #f8f9fa;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.goal-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #cbd4f6, #c4f1ef);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.goal-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.goal-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.goal-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.goal-card:nth-child(1) { animation-delay: 0.1s; }
+.goal-card:nth-child(2) { animation-delay: 0.2s; }
+.goal-card:nth-child(3) { animation-delay: 0.3s; }
+
+.plans-section {
+    padding: 80px 0;
+    background: white;
+    border-top: 1px solid #e1dfdf;
+}
+
+.plans-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.accordion-header {
+    background: linear-gradient(135deg, #f0f0f0, #f8f9fa);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    color: #2C3E50;
+    border: 2px solid #cbd4f6;
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    transform: translateY(-2px);
+}
+
+.accordion-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.accordion-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.accordion-content {
+    background: white;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordion-content.active {
+    max-height: 500px;
+    padding: 30px;
+}
+
+.plan-list {
+    list-style: none;
+}
+
+.plan-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.plan-item:last-child {
+    border-bottom: none;
+}
+
+.plan-icon {
+    background: linear-gradient(135deg, #cbd4f6, #c4f1ef);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+.plan-text {
+    flex: 1;
+    line-height: 1.6;
+}

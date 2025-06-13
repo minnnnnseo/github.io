@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f9fa;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  scroll-snap-type: y mandatory; /* 수직 방향 스냅 */
+  scroll-behavior: smooth;       /* 부드럽게 이동 */
+  overflow-y: scroll;
+}
+
+
+/* 헤더 섹션 */
+.header-section {
+    text-align: center;
+    padding: 80px 0 40px;
+    background: white;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #e599bc;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, #FAD2E1, #f7e3ed);
+    margin: 0 auto 20px;
+}
+
+.section-label {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+  .section {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .text-box {
+    flex: 1;
+    padding: 40px 60px;
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: lighter;
+    border-top: 1px solid #e6e8ea;
+    border-right: 1px solid #e6e8ea;
+    color: #e599bc;
+  }
+
+  /* 오버레이 텍스트 */
+  .overlay-side {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #e6e8ea;
+  }
+  .overlay-side h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  .overlay-side p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.9;
+  }
+  
+
+/* 하단 박스 */
+.bottom-text {
+  background-color: #fbd1e0;
+  color: white;
+  padding: 40px 60px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 세로 중앙 정렬  */
+  gap: 40px;
+  flex-wrap: wrap;
+  min-height: 180px; /* 높이 키운 경우에도 정중앙 유지 */
+}
+
+.info-pair {
+  flex: 1 1 30%;
+}
+.info-pair strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+/* 두 번째 섹션  */
+.project-layout-3 {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  height: 80vh;
+}
+.left-column {
+  flex: 1.2;
+  background-color: #fdfdfd;
+  padding: 80px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-column h2{
+  line-height: 3;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.left-column p{
+  line-height: 2.5;
+}
+
+.right-columns {
+  flex: 1.8;
+  display: flex;
+  flex-direction: column;
+}
+.img-block {
+  flex: 1.8;
+  background-size: cover;
+  background-position: center;
+}
+.img-1 {
+  background-image: url(../img/m1.jpeg);
+}
+.img-2 {
+  background-image: url(../img/m2.jpeg);
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: #fbd1e0;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: fit-content;
+  transition: 0.3s ease;
+  margin-top: 30px;
+  line-height: 1;
+}
+
+.btn1:hover {
+  background-color: #f7dfe7;
+}
+
+.full-image {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/Moodboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 네 번째 섹션 */
+.project-layout-4 {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+
+.left-columns {
+  flex: 1.8; /* 이미지 넓게 */
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  flex: 1.2; /* 텍스트 좁게 */
+  background-color: #fdfdfd;
+  padding: 80px;
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.right-column h2{
+  line-height: 3;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.right-column p{
+  line-height: 2.5;
+}
+
+.img-block {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-3 {
+  background-image: url(../img/m4.jpg);
+}
+
+.img-4 {
+  background-image: url(../img/m3.jpg);
+  background-size: auto;
+}
+
+.btn2 {
+  display: block;
+  background-color: #fbd1e0;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: fit-content;
+  transition: 0.3s ease;
+  margin-top: 30px;
+  line-height: 1;
+  justify-content: right;
+  margin-left: auto;
+}
+
+.btn2:hover {
+  background-color: #f7dfe7;
+}
+
+/* 초기 상태 */
+.float-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+/* 스크롤 진입 시 상태 */
+.float-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
